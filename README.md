@@ -31,4 +31,19 @@ npm install --save-dev lite-server
 "scripts" { "start": "lite-server" }
 ```
 
+## Section 2: TypeScript Basics & Basic Types
+
+### 12. TypeScript Types vs JavaScript Types
+
+> Javascript uses "dynamic types" (resolved at runtime), \
+> Typescript uses "static types" (set during development)
+
+However, sometimes we need to check type on runtime like this,
+
+```js
+if (typeof n1 !== 'number' || typeof n2 !== 'number') {
+  throw new Error('Incorrect input!');
+}
+```
+
 </details>

@@ -10,10 +10,11 @@ function add(n1: number, n2: number, showResult: boolean, phrase: string) {
   }
 }
 
-let number1: number;
+let number1: number; // explicit
 number1 = 5;
-const number2 = 2.8;
+const number2 = 2.8; // rely on type inference
 const printResult = true;
 let resultPhrase = 'Result is: ';
+// resultPhrase = 0;  // error
 
 add(number1, number2, printResult, resultPhrase);
