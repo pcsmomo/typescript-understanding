@@ -1,8 +1,14 @@
-let userInput: unknown;
+let userInput: unknown; // is more restrictive than "any"
 let userName: string;
 
 userInput = 5;
 userInput = 'Max';
+// userName = userInput;  // type error
+
+let userInputAny: any;
+let userNameAny: string;
+userNameAny = userInputAny;
+
 if (typeof userInput === 'string') {
   userName = userInput;
 }

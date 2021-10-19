@@ -59,4 +59,19 @@ role.push('admin'); // push() is an exception. Asllowed from the tuple rules
 > If you really don't know which type it would be, you could use "any" with runtime type checking,\
 > however, it'd be better to avoid use "any" if possible
 
+### 32. The "unknown" Type
+
+unknown is more restrictive than any
+
+```js
+let userInput: unknown; // is more restrictive than "any"
+let userName: string;
+userInput = 'Max';
+// userName = userInput;  // type error
+
+let userInputAny: any;
+let userNameAny: string;
+userNameAny = userInputAny; // no type error
+```
+
 </details>
