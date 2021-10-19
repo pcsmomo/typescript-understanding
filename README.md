@@ -95,4 +95,15 @@ tsc app.ts --watch
 tsc app.ts -w
 ```
 
+### 38. Compiling the Entire Project / Multiple Files
+
+```sh
+tsc --init
+# it creates tsconfig.json
+
+# now this command complies all *.ts
+tsc
+tsc --watch
+```
+
 </details>
