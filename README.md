@@ -74,4 +74,12 @@ let userNameAny: string;
 userNameAny = userInputAny; // no type error
 ```
 
+### 33. The "never" Type
+
+```js
+function generateError(message: string, code: number): never {
+  throw { message: message, errorCode: code };\
+}
+```
+
 </details>
