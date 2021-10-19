@@ -106,4 +106,17 @@ tsc
 tsc --watch
 ```
 
+### 39. Including & Excluding Files
+
+```json
+// tsconfig.json
+{
+  "exclude": [
+    "node_modules" // would be the default
+  ],
+  "include": ["app.ts", "analytics.ts"], // If the same file declared here? "inlucde" first - and then "exclude"
+  "files": ["app.ts"] // specific file. Not really useful
+}
+```
+
 </details>
