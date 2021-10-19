@@ -54,4 +54,9 @@ role = [2, 'author'];
 role.push('admin'); // push() is an exception. Asllowed from the tuple rules
 ```
 
+### 22. The "any" Type
+
+> If you really don't know which type it would be, you could use "any" with runtime type checking,\
+> however, it'd be better to avoid use "any" if possible
+
 </details>
