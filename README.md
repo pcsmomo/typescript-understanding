@@ -142,4 +142,16 @@ When sourceMap is true, we can see .ts file on the Sources tab in devTool, and i
 }
 ```
 
+### 44. rootDir and outDir
+
+```json
+{
+  "rootDir": "./src" /* Specify the root folder within your source files. */,
+  "outDir": "./dist" /* Specify an output folder for all emitted files. */,
+  "removeComments": true /* Disable emitting comments. */,
+  "noEmit": true /* Disable emitting files from a compilation. */,
+  "downlevelIteration": true /* Emit more compliant, but verbose and less performant JavaScript for iteration. */
+}
+```
+
 </details>
