@@ -46,4 +46,12 @@ if (typeof n1 !== 'number' || typeof n2 !== 'number') {
 }
 ```
 
+### 21. Working with Enums
+
+```js
+role: [number, string];
+role = [2, 'author'];
+role.push('admin'); // push() is an exception. Asllowed from the tuple rules
+```
+
 </details>
