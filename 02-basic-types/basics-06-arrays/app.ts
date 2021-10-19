@@ -1,6 +1,7 @@
 // const person: {
 //   name: string;
 //   age: number;
+//   hobbies: string[]s
 // } = {
 const person = {
   name: 'Maximilian',
@@ -15,5 +16,5 @@ console.log(person.name);
 
 for (const hobby of person.hobbies) {
   console.log(hobby.toUpperCase());
-  // console.log(hobby.map()); // !!! ERROR !!!
+  // console.log(hobby.map()); // !!! ERROR !!s!
 }
