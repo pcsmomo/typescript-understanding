@@ -86,4 +86,13 @@ function generateError(message: string, code: number): never {
 
 [Official TypeScript Docs](https://www.typescriptlang.org/docs/handbook/2/everyday-types.html)
 
+## Section 3: The TypeScript Compiler (and its Configuration)
+
+### 37. Using "Watch Mode"
+
+```sh
+tsc app.ts --watch
+tsc app.ts -w
+```
+
 </details>
