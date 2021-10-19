@@ -82,4 +82,8 @@ function generateError(message: string, code: number): never {
 }
 ```
 
+### 35. Useful Resources & Links
+
+[Official TypeScript Docs](https://www.typescriptlang.org/docs/handbook/2/everyday-types.html)
+
 </details>
