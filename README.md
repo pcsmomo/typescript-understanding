@@ -130,4 +130,16 @@ if "lib": [] is declared, the compiler follows that specific rules.
 }
 ```
 
+### 43. Working with Source Maps
+
+It is super useful when debugging mode.
+
+When sourceMap is true, we can see .ts file on the Sources tab in devTool, and it's easy to debug (even including breakpoint)
+
+```json
+{
+  "sourceMap": true
+}
+```
+
 </details>
