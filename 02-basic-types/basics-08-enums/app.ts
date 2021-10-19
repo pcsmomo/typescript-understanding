@@ -18,6 +18,18 @@
 // const READ_ONLY = 1;
 // const AUTHOR = 2;
 
+// enum Role {
+//   ADMIN, // 0
+//   READ_ONLY, // 1
+//   AUTHOR,  // 2
+// }
+
+// enum Role {
+//   ADMIN = 5, // 5
+//   READ_ONLY, // 6
+//   AUTHOR,  // 7
+// }
+
 enum Role {
   ADMIN = 'ADMIN',
   READ_ONLY = 100,

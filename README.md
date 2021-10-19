@@ -46,7 +46,7 @@ if (typeof n1 !== 'number' || typeof n2 !== 'number') {
 }
 ```
 
-### 21. Working with Enums
+### 20. Working with Tuples
 
 ```js
 role: [number, string];
