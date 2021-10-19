@@ -119,4 +119,15 @@ tsc --watch
 }
 ```
 
+### 41. Understanding TypeScript Core Libs
+
+if "lib": [] is declared, the compiler follows that specific rules.
+
+```json
+{
+  // Default ES6 Rules
+  "lib": ["DOM", "ES6", "DOM.Iterable", "ScriptHost"]
+}
+```
+
 </details>
