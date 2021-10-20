@@ -154,4 +154,12 @@ When sourceMap is true, we can see .ts file on the Sources tab in devTool, and i
 }
 ```
 
+### 45. Stop Emitting Files on Compilation Errors
+
+```json
+{
+  "noEmitOnError": true /* Disable emitting files if any type checking errors are reported. */
+}
+```
+
 </details>
