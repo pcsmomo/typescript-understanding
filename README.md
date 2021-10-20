@@ -162,4 +162,27 @@ When sourceMap is true, we can see .ts file on the Sources tab in devTool, and i
 }
 ```
 
+### 46. Strict Compilation
+
+```json
+{
+  "strict": true /* Enable all strict type-checking options. */
+  // "noImplicitAny": true,                            /* Enable error reporting for expressions and declarations with an implied `any` type.. */
+  // "strictNullChecks": true,                         /* When type checking, take into account `null` and `undefined`. */
+  // "strictFunctionTypes": true,                      /* When assigning functions, check to ensure parameters and the return values are subtype-compatible. */
+  // "strictBindCallApply": true,                      /* Check that the arguments for `bind`, `call`, and `apply` methods match the original function. */
+  // "alwaysStrict": true,                             /* Ensure 'use strict' is always emitted. */
+}
+```
+
+### 47. Code Quality Options
+
+```json
+{
+  // "noUnusedLocals": true,                           /* Enable error reporting when a local variables aren't read. */
+  // "noUnusedParameters": true,                       /* Raise an error when a function parameter isn't read */
+  // "noImplicitReturns": true,                        /* Enable error reporting for codepaths that do not explicitly return in a function. */
+}
+```
+
 </details>
