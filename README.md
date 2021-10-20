@@ -185,4 +185,14 @@ When sourceMap is true, we can see .ts file on the Sources tab in devTool, and i
 }
 ```
 
+### 48. Debugging with Visual Studio Code
+
+Setting up .vscode/launch.json
+
+```json
+{
+  "sourceMap": true
+}
+```
+
 </details>
