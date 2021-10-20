@@ -201,4 +201,10 @@ Setting up .vscode/launch.json
 - [Compiler Config Docs](https://www.typescriptlang.org/docs/handbook/compiler-options.html)
 - [VS Code TS Debugging](https://code.visualstudio.com/docs/typescript/typescript-debugging)
 
+## Section 4: Next-generation JavaScript & TypeScript
+
+### 51. Module Introduction
+
+[Next-gen JS Feature Table](https://kangax.github.io/compat-table/es6/)
+
 </details>
