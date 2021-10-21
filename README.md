@@ -209,4 +209,14 @@ Setting up .vscode/launch.json
 
 ## Section 5: Classes & Interfaces
 
+### 64. Constructor Functions & The "this" Keyword
+
+```js
+// this "this" is a typescript thing to give the method a hint
+// it won't be generated on app.js at all
+describe(this: Department) {
+  console.log('Department: ' + this.name);
+}
+```
+
 </details>
