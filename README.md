@@ -207,4 +207,6 @@ Setting up .vscode/launch.json
 
 [Next-gen JS Feature Table](https://kangax.github.io/compat-table/es6/)
 
+## Section 5: Classes & Interfaces
+
 </details>
