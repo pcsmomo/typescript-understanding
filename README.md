@@ -226,4 +226,8 @@ describe(this: Department) {
 
 [Public class fields](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes/Public_class_fields)
 
+### 71. Getters & Setters
+
+Modern javascript has getter/setter feature, but not es5
+
 </details>
