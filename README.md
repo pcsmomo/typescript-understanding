@@ -219,4 +219,11 @@ describe(this: Department) {
 }
 ```
 
+### 65. private and "public" Access Modifiers
+
+- Typescript provides "private", "public".
+- Vanilla script provides "static" for public
+
+[Public class fields](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes/Public_class_fields)
+
 </details>
