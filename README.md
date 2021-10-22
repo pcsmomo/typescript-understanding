@@ -271,4 +271,19 @@ There is nothing about interface in the app.js compiled.
 1. For object type, _&_ will comebine types (spread)
 2. For union types, _&_ will intersect types (shrink)
 
+### 90. More on Type Guards
+
+```js
+if (typeof a === 'string' || typeof b === 'string') {
+}
+if ('privileges' in emp) {
+}
+if ('startDate' in emp) {
+}
+class Truck {}
+if (vehicle instanceof Truck) {
+}
+// instanceof can be used for 'class' but not 'interface', in runtime there's no interface
+```
+
 </details>
