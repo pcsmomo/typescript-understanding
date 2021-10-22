@@ -256,4 +256,14 @@ There is nothing about interface in the app.js compiled.
 - [More on (JS) Classes](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes)
 - [More on TS Interfaces](https://www.typescriptlang.org/docs/handbook/2/objects.html)
 
+## Section 6: Advanced Types
+
+### 88. Module Introduction
+
+1. Intersection Types
+2. Type Guards
+3. Discriminated Unions
+4. Type Costing
+5. Function Overloads
+
 </details>
