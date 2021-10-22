@@ -230,4 +230,9 @@ describe(this: Department) {
 
 Modern javascript has getter/setter feature, but not es5
 
+### 78. Using Interfaces with Classes
+
+- [Differences Between Type Aliases and Interfaces](https://www.typescriptlang.org/docs/handbook/2/everyday-types.html#differences-between-type-aliases-and-interfaces)
+- [Difference Between Interface and Abstract Class](https://stackoverflow.com/questions/50110844/what-is-the-difference-between-interface-and-abstract-class-in-typescript)
+
 </details>
