@@ -237,4 +237,13 @@ interface and type are pretty similars
 - [Differences Between Type Aliases and Interfaces](https://www.typescriptlang.org/docs/handbook/2/everyday-types.html#differences-between-type-aliases-and-interfaces)
 - [Difference Between Interface and Abstract Class](https://stackoverflow.com/questions/50110844/what-is-the-difference-between-interface-and-abstract-class-in-typescript)
 
+### 82. Interfaces as Function Types
+
+```js
+type AddFn = (a: number, b: number) => number;
+interface AddFn {
+  (a: number, b: number): number;
+}
+```
+
 </details>
