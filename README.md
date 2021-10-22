@@ -246,4 +246,9 @@ interface AddFn {
 }
 ```
 
+### 84. Compiling Interfaces to JavaScript
+
+Interface is only for typescript to help devlopers. \
+There is nothing about interface in the app.js compiled.
+
 </details>
