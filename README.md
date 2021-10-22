@@ -266,4 +266,9 @@ There is nothing about interface in the app.js compiled.
 4. Type Costing
 5. Function Overloads
 
+### 89. Intersection Types
+
+1. For object type, _&_ will comebine types (spread)
+2. For union types, _&_ will intersect types (shrink)
+
 </details>
