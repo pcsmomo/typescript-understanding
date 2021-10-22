@@ -251,4 +251,9 @@ interface AddFn {
 Interface is only for typescript to help devlopers. \
 There is nothing about interface in the app.js compiled.
 
+### 87. Useful Resources & Links
+
+- [More on (JS) Classes](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes)
+- [More on TS Interfaces](https://www.typescriptlang.org/docs/handbook/2/objects.html)
+
 </details>
