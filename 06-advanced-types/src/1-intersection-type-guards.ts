@@ -1,3 +1,6 @@
+// ****************************
+// 1. intersection types
+
 type Admin = {
   name: string;
   privileges: string[];
@@ -23,6 +26,8 @@ type Numeric = number | boolean;
 
 type Universal = Combinable & Numeric;
 
+// ****************************
+// 2. type guards
 function add(a: Combinable, b: Combinable) {
   if (typeof a === 'string' || typeof b === 'string') {
     return a.toString() + b.toString();
