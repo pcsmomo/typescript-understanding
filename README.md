@@ -370,4 +370,8 @@ const names2: Readonly<string[]> = ['Max', 'Anna'];
 - Generic Type can lock up a specific type
 - Union Type is more flexible but sometimes it cannot constraint data type
 
+### 111. Useful Resources & Links
+
+[More on Generics](https://www.typescriptlang.org/docs/handbook/generics.html)
+
 </details>
