@@ -336,4 +336,13 @@ function add(a: number, b: string): string;
 console.log(fetchedUserData?.job?.title);
 ```
 
+### 96. Nullish Coalescing
+
+'??' checks including empty strings "", unlike '||'
+
+```js
+// const storedData = userInput || 'DEFAULT';
+const storedData = userInput ?? 'DEFAULT';
+```
+
 </details>
