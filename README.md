@@ -330,4 +330,10 @@ function add(a: string, b: number): string;
 function add(a: number, b: string): string;
 ```
 
+### 95. Optional Chaining
+
+```js
+console.log(fetchedUserData?.job?.title);
+```
+
 </details>
