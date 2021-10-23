@@ -395,4 +395,13 @@ function Logger(constructor: Function) {
 return function (_: Function) {};
 ```
 
+### 116. Adding Multiple Decorators
+
+The order of executing
+
+1. Logger
+2. WithTempalte
+3. WithTempalte return function
+4. Logger return function
+
 </details>

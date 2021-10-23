@@ -22,6 +22,7 @@ console.log('******************************');
 // ****************************
 // 2. Working with Decorator Factories
 function Logger2(logString: string) {
+  console.log('LOGGER FACTORY');
   return function (constructor: Function) {
     console.log(logString);
     console.log(constructor);
@@ -45,9 +46,11 @@ console.log('******************************');
 // 3. Building More Useful Decorators
 
 function WithTemplate(template: string, hookId: string) {
+  console.log('TEMPLATE FACTORY');
   // _ when I don't want to use it
   // return function (_: Function) {
   return function (constructor: any) {
+    console.log('Rendering template');
     const hookEl = document.getElementById(hookId);
     const p = new constructor();
     if (hookEl) {
@@ -57,6 +60,12 @@ function WithTemplate(template: string, hookId: string) {
   };
 }
 
+// 4. Adding Multiple Decorators
+// The order of executing
+// 1. Logger -> 2. WithTempalte -> 3. WithTempalte return function
+// -> 4. Logger return function
+
+@Logger2('Logging')
 @WithTemplate('<h1>My Person Object</h1>', 'app')
 class Person3 {
   name = 'Max';
