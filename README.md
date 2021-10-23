@@ -310,4 +310,15 @@ if (userInputElement) {
 }
 ```
 
+### 93. Index Properties
+
+It can be used when we don't know \
+which property name we use, \
+and how many properties it would have
+
+```js
+// prop cannot be boolean
+[prop: string]: string;
+```
+
 </details>
