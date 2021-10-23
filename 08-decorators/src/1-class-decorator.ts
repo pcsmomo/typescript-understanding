@@ -45,10 +45,25 @@ console.log('******************************');
 // ****************************
 // 3. Building More Useful Decorators
 
+// function WithTemplate(template: string, hookId: string) {
+//   console.log('TEMPLATE FACTORY');
+//   // _ when I don't want to use it
+//   // return function (_: Function) {
+//   return function (constructor: any) {
+//     console.log('Rendering template');
+//     const hookEl = document.getElementById(hookId);
+//     const p = new constructor();
+//     if (hookEl) {
+//       hookEl.innerHTML = template;
+//       hookEl.querySelector('h1')!.textContent = p.name;
+//     }
+//   };
+// }
+
+// ****************************
+// 6. Returning (and changing) a Class in a Class Decorator
 function WithTemplate(template: string, hookId: string) {
   console.log('TEMPLATE FACTORY');
-  // _ when I don't want to use it
-  // return function (_: Function) {
   return function (constructor: any) {
     console.log('Rendering template');
     const hookEl = document.getElementById(hookId);
