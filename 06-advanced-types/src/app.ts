@@ -1,16 +1,13 @@
 // ****************************
-// 5. index properties
-// More flexible for type checking
-// We don't know
-// 1. which property name we use
-// 2. how many properties it would have
-interface ErrorContainer {
-  // { email: 'Not a valid email', username: 'Must start with a character!' }
-  // id: string;
-  [prop: string]: string;
-}
+// 6. Function overloads
+type Combinable2 = string | number;
+type Numeric2 = number | boolean;
 
-const errBag: ErrorContainer = {
-  email: 'Not a valid email!',
-  username: 'Must start with a capital character!',
-};
+type Universal2 = Combinable2 & Numeric2;
+
+function add(a: Combinable2, b: Combinable2) {
+  if (typeof a === 'string' || typeof b === 'string') {
+    return a.toString() + b.toString();
+  }
+  return a + b;
+}
