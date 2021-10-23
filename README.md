@@ -413,4 +413,8 @@ The order of executing
 
 > the inner constructor will add those extra logic when the class is instantiated
 
+### 121. Other Decorator Return Types
+
+[More on Property Descriptors](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/defineProperty)
+
 </details>
