@@ -345,4 +345,8 @@ console.log(fetchedUserData?.job?.title);
 const storedData = userInput ?? 'DEFAULT';
 ```
 
+### 99. Useful Resources & Links
+
+[More on Advanced Types](https://www.typescriptlang.org/docs/handbook/2/types-from-types.html)
+
 </details>
