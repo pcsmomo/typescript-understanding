@@ -11,10 +11,12 @@ function Log(target: any, propertyName: string | Symbol) {
 
 // Accessor decorator!
 function Log2(target: any, name: string, descriptor: PropertyDescriptor) {
+  // function Log2(target: any, name: string, descriptor: PropertyDescriptor): PropertyDescriptor {
   console.log('== Log2: Accessor decorator! ==');
   console.log(target);
   console.log(name);
   console.log(descriptor);
+  // return { enumerable: true };
 }
 
 // Method decorator!
