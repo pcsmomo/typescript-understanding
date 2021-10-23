@@ -374,4 +374,18 @@ const names2: Readonly<string[]> = ['Max', 'Anna'];
 
 [More on Generics](https://www.typescriptlang.org/docs/handbook/generics.html)
 
+### 113. A First Class Decorator
+
+```json
+{
+  "target": "es6" /* Specify ECMAScript target version: 'ES3' (default), 'ES5', 'ES2015', 'ES2016', 'ES2017','ES2018' or 'ESNEXT'. */,
+  "experimentalDecorators": true /* Enables experimental support for ES7 decorators. */
+}
+```
+
+```js
+// It is being created first before pers instance created.
+function Logger(constructor: Function) {
+```
+
 </details>
