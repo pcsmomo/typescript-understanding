@@ -409,4 +409,8 @@ The order of executing
 3. WithTempalte return function
 4. Logger return function
 
+### 120. Returning (and changing) a Class in a Class Decorator
+
+> the inner constructor will add those extra logic when the class is instantiated
+
 </details>
