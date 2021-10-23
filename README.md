@@ -349,4 +349,13 @@ const storedData = userInput ?? 'DEFAULT';
 
 [More on Advanced Types](https://www.typescriptlang.org/docs/handbook/2/types-from-types.html)
 
+## Section 8: Decorators
+
+### 112. Module Introduction
+
+1. What?
+2. Generic Functions & Classes
+3. Contraints
+4. Special TypeScript Types
+
 </details>
