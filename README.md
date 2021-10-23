@@ -358,4 +358,11 @@ const storedData = userInput ?? 'DEFAULT';
 3. Contraints
 4. Special TypeScript Types
 
+### 108. Generic Utility Types
+
+```js
+const courseGoal: Partial<CourseGoal> = {};
+const names2: Readonly<string[]> = ['Max', 'Anna'];
+```
+
 </details>
