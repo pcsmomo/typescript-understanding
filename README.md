@@ -388,4 +388,11 @@ const names2: Readonly<string[]> = ['Max', 'Anna'];
 function Logger(constructor: Function) {
 ```
 
+### 115. Building More Useful Decorators
+
+```js
+// _ when I don't want to use it
+return function (_: Function) {};
+```
+
 </details>
