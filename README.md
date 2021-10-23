@@ -263,7 +263,7 @@ There is nothing about interface in the app.js compiled.
 1. Intersection Types
 2. Type Guards
 3. Discriminated Unions
-4. Type Costing
+4. Type Casting
 5. Function Overloads
 
 ### 89. Intersection Types
@@ -284,6 +284,30 @@ class Truck {}
 if (vehicle instanceof Truck) {
 }
 // instanceof can be used for 'class' but not 'interface', in runtime there's no interface
+```
+
+### 92. Type Casting
+
+```js
+// way 1 to do type casting
+// When you use react, this syntax would be confusing by react JSX syntax with brackets <>
+const userInputElement = <HTMLInputElement>(document.getElementById('user-input'));  // </>
+
+// way 2 to do type casting
+const userInputElement = document.getElementById('user-input') as HTMLInputElement;
+
+// way 3.
+// "!" can be used when expression in front of "!" will never yield "null"
+// If you're not 100% sure, than you can use if statement
+const userInputElement = document.getElementById(
+  'user-input'
+)! as HTMLInputElement;
+
+// way 4, userInputElement can be null
+const userInputElement = document.getElementById('user-input');
+if (userInputElement) {
+  (userInputElement as HTMLInputElement).value = 'High there!';
+}
 ```
 
 </details>
