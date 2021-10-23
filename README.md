@@ -376,7 +376,8 @@ const names2: Readonly<string[]> = ['Max', 'Anna'];
 
 ## Section 8: Decorators
 
-> Decorator is a kind of automatic trigger I would say
+> Decorator is triggered when the class is defined\
+> Not like event listeners
 
 ### 113. A First Class Decorator
 
