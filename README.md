@@ -374,6 +374,10 @@ const names2: Readonly<string[]> = ['Max', 'Anna'];
 
 [More on Generics](https://www.typescriptlang.org/docs/handbook/generics.html)
 
+## Section 8: Decorators
+
+> Decorator is a kind of automatic trigger I would say
+
 ### 113. A First Class Decorator
 
 ```json
