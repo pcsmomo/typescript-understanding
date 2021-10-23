@@ -365,4 +365,9 @@ const courseGoal: Partial<CourseGoal> = {};
 const names2: Readonly<string[]> = ['Max', 'Anna'];
 ```
 
+### 109. Generic Types vs Union Types
+
+- Generic Type can lock up a specific type
+- Union Type is more flexible but sometimes it cannot constraint data type
+
 </details>
