@@ -417,4 +417,12 @@ The order of executing
 
 [More on Property Descriptors](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/defineProperty)
 
+### 126. Wrap Up
+
+[class-validator - Github](https://github.com/typestack/class-validator)
+
+### 127. Useful Resources & Links
+
+[More on Decorators](https://www.typescriptlang.org/docs/handbook/decorators.html)
+
 </details>
