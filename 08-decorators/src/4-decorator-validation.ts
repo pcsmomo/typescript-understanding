@@ -10,14 +10,20 @@ function Required(target: any, propName: string) {
   // target.constructor.name is the class name, Course
   registeredValidators[target.constructor.name] = {
     ...registeredValidators[target.constructor.name],
-    [propName]: ['required'],
+    [propName]: [
+      ...(registeredValidators[target.constructor.name]?.[propName] ?? []),
+      'required',
+    ],
   };
 }
 
 function PositiveNumber(target: any, propName: string) {
   registeredValidators[target.constructor.name] = {
     ...registeredValidators[target.constructor.name],
-    [propName]: ['positive'],
+    [propName]: [
+      ...(registeredValidators[target.constructor.name]?.[propName] ?? []),
+      'positive',
+    ],
   };
 }
 
