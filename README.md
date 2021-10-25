@@ -444,4 +444,9 @@ this.hostElement.insertAdjacentElement('afterbegin', this.element);
 validatableInput.minLength != null;
 ```
 
+### 136. Managing Application State with Singletons
+
+- Singleton pattern
+- **Subscription pattern** (!interesting)
+
 </details>
