@@ -425,4 +425,6 @@ The order of executing
 
 [More on Decorators](https://www.typescriptlang.org/docs/handbook/decorators.html)
 
+## Section 9: Practice Time! Let's build a Drag & Drop Project
+
 </details>
