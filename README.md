@@ -427,4 +427,13 @@ The order of executing
 
 ## Section 9: Practice Time! Let's build a Drag & Drop Project
 
+### 130. DOM Element Selection & OOP Rendering
+
+- [document.importNode() - MDN](https://developer.mozilla.org/en-US/docs/Web/API/Document/importNode)
+- []()
+
+```js
+document.importNode(this.templateElement.content, true);
+```
+
 </details>
