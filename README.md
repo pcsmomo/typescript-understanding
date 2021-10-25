@@ -437,4 +437,11 @@ document.importNode(this.templateElement.content, true);
 this.hostElement.insertAdjacentElement('afterbegin', this.element);
 ```
 
+### 134. Creating a Re-Usable Validation Functionality
+
+```js
+// '!= null' means not (null and undefined)
+validatableInput.minLength != null;
+```
+
 </details>
