@@ -430,10 +430,11 @@ The order of executing
 ### 130. DOM Element Selection & OOP Rendering
 
 - [document.importNode() - MDN](https://developer.mozilla.org/en-US/docs/Web/API/Document/importNode)
-- []()
+- [Element.insertAdjacentElement() - MDN](https://developer.mozilla.org/en-US/docs/Web/API/Element/insertAdjacentElement)
 
 ```js
 document.importNode(this.templateElement.content, true);
+this.hostElement.insertAdjacentElement('afterbegin', this.element);
 ```
 
 </details>
