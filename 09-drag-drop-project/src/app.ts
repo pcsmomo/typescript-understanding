@@ -69,16 +69,30 @@ function validate(validatableInput: Validatable) {
   if (validatableInput.required) {
     isValid = isValid && validatableInput.value.toString().trim().length !== 0;
   }
-  if (validatableInput.minLength != null && typeof validatableInput.value === 'string') {
-    isValid = isValid && validatableInput.value.length >= validatableInput.minLength;
+  if (
+    validatableInput.minLength != null &&
+    typeof validatableInput.value === 'string'
+  ) {
+    isValid =
+      isValid && validatableInput.value.length >= validatableInput.minLength;
   }
-  if (validatableInput.maxLength != null && typeof validatableInput.value === 'string') {
-    isValid = isValid && validatableInput.value.length <= validatableInput.maxLength;
+  if (
+    validatableInput.maxLength != null &&
+    typeof validatableInput.value === 'string'
+  ) {
+    isValid =
+      isValid && validatableInput.value.length <= validatableInput.maxLength;
   }
-  if (validatableInput.min != null && typeof validatableInput.value === 'number') {
+  if (
+    validatableInput.min != null &&
+    typeof validatableInput.value === 'number'
+  ) {
     isValid = isValid && validatableInput.value >= validatableInput.min;
   }
-  if (validatableInput.max != null && typeof validatableInput.value === 'number') {
+  if (
+    validatableInput.max != null &&
+    typeof validatableInput.value === 'number'
+  ) {
     isValid = isValid && validatableInput.value <= validatableInput.max;
   }
   return isValid;
@@ -105,11 +119,16 @@ class ProjectList {
   assignedProjects: Project[];
 
   constructor(private type: 'active' | 'finished') {
-    this.templateElement = document.getElementById('project-list')! as HTMLTemplateElement;
+    this.templateElement = document.getElementById(
+      'project-list'
+    )! as HTMLTemplateElement;
     this.hostElement = document.getElementById('app')! as HTMLDivElement;
     this.assignedProjects = [];
 
-    const importedNode = document.importNode(this.templateElement.content, true);
+    const importedNode = document.importNode(
+      this.templateElement.content,
+      true
+    );
     this.element = importedNode.firstElementChild as HTMLElement;
     this.element.id = `${this.type}-projects`;
 
@@ -123,7 +142,9 @@ class ProjectList {
   }
 
   private renderProjects() {
-    const listEl = document.getElementById(`${this.type}-projects-list`)! as HTMLUListElement;
+    const listEl = document.getElementById(
+      `${this.type}-projects-list`
+    )! as HTMLUListElement;
     for (const prjItem of this.assignedProjects) {
       const listItem = document.createElement('li');
       listItem.textContent = prjItem.title;
@@ -134,7 +155,8 @@ class ProjectList {
   private renderContent() {
     const listId = `${this.type}-projects-list`;
     this.element.querySelector('ul')!.id = listId;
-    this.element.querySelector('h2')!.textContent = this.type.toUpperCase() + ' PROJECT';
+    this.element.querySelector('h2')!.textContent =
+      this.type.toUpperCase() + ' PROJECT';
   }
 
   private attach() {
@@ -152,16 +174,27 @@ class ProjectInput {
   peopleInputElement: HTMLInputElement;
 
   constructor() {
-    this.templateElement = document.getElementById('project-input')! as HTMLTemplateElement;
+    this.templateElement = document.getElementById(
+      'project-input'
+    )! as HTMLTemplateElement;
     this.hostElement = document.getElementById('app')! as HTMLDivElement;
 
-    const importedNode = document.importNode(this.templateElement.content, true);
+    const importedNode = document.importNode(
+      this.templateElement.content,
+      true
+    );
     this.element = importedNode.firstElementChild as HTMLFormElement;
     this.element.id = 'user-input';
 
-    this.titleInputElement = this.element.querySelector('#title') as HTMLInputElement;
-    this.descriptionInputElement = this.element.querySelector('#description') as HTMLInputElement;
-    this.peopleInputElement = this.element.querySelector('#people') as HTMLInputElement;
+    this.titleInputElement = this.element.querySelector(
+      '#title'
+    ) as HTMLInputElement;
+    this.descriptionInputElement = this.element.querySelector(
+      '#description'
+    ) as HTMLInputElement;
+    this.peopleInputElement = this.element.querySelector(
+      '#people'
+    ) as HTMLInputElement;
 
     this.configure();
     this.attach();
