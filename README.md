@@ -449,4 +449,14 @@ validatableInput.minLength != null;
 - Singleton pattern
 - **Subscription pattern** (!interesting)
 
+### 142. Utilizing Interfaces to Implement Drag & Drop
+
+DragEvent type is included the tsconfig lib
+
+```json
+{
+  "lib": ["dom", "es6", "dom.iterable", "scripthost"]
+}
+```
+
 </details>
