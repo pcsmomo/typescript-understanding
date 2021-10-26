@@ -193,13 +193,13 @@ class ProjectList extends Component<HTMLDivElement, HTMLElement> {
 
   configure() {
     projectState.addListener((projects: Project[]) => {
-      const relavantProjects = projects.filter((prj) => {
+      const relevantProjects = projects.filter((prj) => {
         if (this.type === 'active') {
           return prj.status === ProjectStatus.Active;
         }
         return prj.status === ProjectStatus.Finished;
       });
-      this.assignedProjects = relavantProjects;
+      this.assignedProjects = relevantProjects;
       this.renderProjects();
     });
   }
@@ -208,7 +208,7 @@ class ProjectList extends Component<HTMLDivElement, HTMLElement> {
     const listId = `${this.type}-projects-list`;
     this.element.querySelector('ul')!.id = listId;
     this.element.querySelector('h2')!.textContent =
-      this.type.toUpperCase() + ' PROJECT';
+      this.type.toUpperCase() + ' PROJECTS';
   }
 
   private renderProjects() {
