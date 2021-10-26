@@ -459,4 +459,18 @@ DragEvent type is included the tsconfig lib
 }
 ```
 
+### 144. Adding a Droppable Area
+
+- [HTML Drag and Drop API](https://developer.mozilla.org/en-US/docs/Web/API/HTML_Drag_and_Drop_API)
+- [event.dataTransfer](https://developer.mozilla.org/en-US/docs/Web/API/DataTransfer)
+- [DataTransfer.setData()](https://developer.mozilla.org/en-US/docs/Web/API/DataTransfer/setData)
+- [DataTransfer.effectAllowed](https://developer.mozilla.org/en-US/docs/Web/API/DataTransfer/effectAllowed)
+
+```js
+dragStartHandler(event: DragEvent) {
+  event.dataTransfer!.setData('text/plain', this.project.id);
+  event.dataTransfer!.effectAllowed = 'move'
+}
+```
+
 </details>
