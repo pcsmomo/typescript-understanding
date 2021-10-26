@@ -489,4 +489,22 @@ dragStartHandler(event: DragEvent) {
    2. Per-file compilation but single <script> import
    3. Bundling via third-party tools (e.g. Webpack) is possible!
 
+### 150. Working with Namespaces
+
+1. namespace is a typescript feature
+   [typescript Namespaces](https://www.typescriptlang.org/docs/handbook/namespaces.html)
+2. /// (triple slashes)
+   ```js
+   // Triple Slashes (///) is a typescript special syntax
+   /// <reference path="drag-drop-interfaces.ts" />
+   ```
+3. change tsconfig.json
+   ```json
+   {
+     "module": "amd" /* Specify module code generation: 'none', 'commonjs', 'amd', 'system', 'umd', 'es2015', or 'ESNext'. */,
+     "outFile": "./dist/bundle.js" /* Concatenate and emit output to single file. */
+   }
+   ```
+4. change index.html to link ./dist/bundle.js
+
 </details>
