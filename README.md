@@ -512,9 +512,21 @@ dragStartHandler(event: DragEvent) {
 1. Remove all namespaces
 2. Use Import/Export
 3. Import 'js' not 'ts'
+4. tsconfig.json
+   ```json
+   {
+     "module": "ES2015" /* Specify module code generation: 'none', 'commonjs', 'amd', 'system', 'umd', 'es2015', or 'ESNext'. */
+     // "outFile": "./dist/bundle.js" /* Concatenate and emit output to single file. */,
+   }
+   ```
 
 ### 156. How Does Code In Modules Execute?
 
 In Module type, a javascript file runs only once even it was imported several times
+
+### 158. Useful Resources & Links
+
+- [JavaScript Modules (Overview)](https://medium.com/computed-comparisons/commonjs-vs-amd-vs-requirejs-vs-es6-modules-2e814b114a0b)
+- [JavaScript modules - MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Modules)
 
 </details>
