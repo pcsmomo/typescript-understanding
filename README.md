@@ -597,4 +597,17 @@ npm install --save-dev webpack webpack-cli webpack-dev-server typescript ts-load
    - `npm run build`
    - `npm start`
 
+### 164. Finishing the Setup & Adding webpack-dev-server
+
+1. Modify start script
+   - `"start": "webpack-dev-server",`
+2. `npm start`
+   - In the webpack dev server mode, the bundle is generated in memory only,
+   - Basically it doens't read from file system.
+3. Modify webpack.config.js
+   - `publicPath: 'dist',`
+
+> It's not working on my local as it couldn't load index.html \
+> I guess with the recent version of webpack, I need to configure about index.html
+
 </details>
