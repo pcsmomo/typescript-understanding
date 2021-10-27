@@ -529,4 +529,6 @@ In Module type, a javascript file runs only once even it was imported several ti
 - [JavaScript Modules (Overview)](https://medium.com/computed-comparisons/commonjs-vs-amd-vs-requirejs-vs-es6-modules-2e814b114a0b)
 - [JavaScript modules - MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Modules)
 
+## Section 11: Using Webpack with TypeScript
+
 </details>
