@@ -507,4 +507,10 @@ dragStartHandler(event: DragEvent) {
    ```
 4. change index.html to link ./dist/bundle.js
 
+### 154. Using ES Modules
+
+1. Remove all namespaces
+2. Use Import/Export
+3. Import 'js' not 'ts'
+
 </details>
