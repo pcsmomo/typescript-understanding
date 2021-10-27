@@ -547,4 +547,10 @@ Webpack is a bundling & "Build Orchestration" Tool
 | Unoptimized code (not as small as possible)  | Optimized (minified) code, less code to download |
 |     "External" development server needed     |       More build steps can be added easily       |
 
+### 161. Installing Webpack & Important Dependencies
+
+```sh
+npm install --save-dev webpack webpack-cli webpack-dev-server typescript ts-loader
+```
+
 </details>
