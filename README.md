@@ -486,7 +486,7 @@ dragStartHandler(event: DragEvent) {
    2. Per-file or bundled compilation is possible (less imports to manage)
 2. ES6 Imports/Exports
    1. Use ES6 import/export syntax
-   2. Per-file compilation but single <script> import
+   2. Per-file compilation but single `<script> import`
    3. Bundling via third-party tools (e.g. Webpack) is possible!
 
 ### 150. Working with Namespaces
@@ -555,18 +555,46 @@ npm install --save-dev webpack webpack-cli webpack-dev-server typescript ts-load
 
 ### 162. Adding Entry & Output Configuration
 
-```json
-{
-  "target": "es6",
-  "module": "ES2015",
-  "outDir": "./dist"
-  // "rootDir": "./src"
-  // Webpack will take care of "rootDir"
-}
-```
-
 1. Modify tsconfig.json
+   ```json
+   {
+     "target": "es6",
+     "module": "ES2015",
+     "outDir": "./dist"
+     // "rootDir": "./src"
+     // Webpack will take care of "rootDir"
+   }
+   ```
 2. Create webpack.config.js
 3. Remove ".js" from all import statements
+4. Start configuring webpack.config.js
+   - continue to next lecture
+
+### 163. Adding TypeScript Support with the ts-loader Package
+
+4. Configure webpack.config.js
+   ```json
+   {
+     "devtool": "inline-source-map",
+     // It tells webpack, there will be generated source maps already,
+     // So it should extract and wire up correctly to the bundle.js.
+     // So we get such as a bundle, we still have a great development experience.
+     // **Means, we can see the original source code in the source tab, devTools.**
+     "module": {},
+     "resolve": {}
+   }
+   ```
+5. Make sure sourceMap: true on tsconfig.json
+   ```json
+   {
+     "sourceMap": true /* Generates corresponding '.map' file. */
+   }
+   ```
+6. Modify index.html to import `dist/bundle.js`
+7. Add "build" script in package.json
+   - `"build": "webpack"`
+8. Build and start!
+   - `npm run build`
+   - `npm start`
 
 </details>
