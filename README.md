@@ -553,4 +553,20 @@ Webpack is a bundling & "Build Orchestration" Tool
 npm install --save-dev webpack webpack-cli webpack-dev-server typescript ts-loader
 ```
 
+### 162. Adding Entry & Output Configuration
+
+```json
+{
+  "target": "es6",
+  "module": "ES2015",
+  "outDir": "./dist"
+  // "rootDir": "./src"
+  // Webpack will take care of "rootDir"
+}
+```
+
+1. Modify tsconfig.json
+2. Create webpack.config.js
+3. Remove ".js" from all import statements
+
 </details>
