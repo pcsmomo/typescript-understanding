@@ -513,4 +513,8 @@ dragStartHandler(event: DragEvent) {
 2. Use Import/Export
 3. Import 'js' not 'ts'
 
+### 156. How Does Code In Modules Execute?
+
+In Module type, a javascript file runs only once even it was imported several times
+
 </details>
