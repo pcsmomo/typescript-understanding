@@ -531,4 +531,20 @@ In Module type, a javascript file runs only once even it was imported several ti
 
 ## Section 11: Using Webpack with TypeScript
 
+### 160. What is Webpack & Why do we need it?
+
+When we have several javascript files in our project, \
+There will be as many http requests as the javascript files \
+And it costs.\
+
+Webpack is a bundling & "Build Orchestration" Tool
+
+[Webpack DOC](https://webpack.js.org/concepts/)
+
+|                "Normal" Setup                |                   With Webpack                   |
+| :------------------------------------------: | :----------------------------------------------: |
+| Multiple .ts files & imports (Http requests) |       Code bundles, less imports required        |
+| Unoptimized code (not as small as possible)  | Optimized (minified) code, less code to download |
+|     "External" development server needed     |       More build steps can be added easily       |
+
 </details>
