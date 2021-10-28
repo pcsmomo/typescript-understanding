@@ -625,4 +625,11 @@ npm install --save-dev clean-webpack-plugin
 }
 ```
 
+## Section 12: 3rd Party Libraries & TypeScript
+
+### 168. Module Introduction
+
+1. "Normal" Libraries & Using them with Typescript
+2. TypeScript-specific Libraries
+
 </details>
