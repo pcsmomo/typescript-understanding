@@ -644,4 +644,22 @@ npm install --save-dev clean-webpack-plugin
 npm install --save-dev html-webpack-plugin
 ```
 
+### 169. Using JavaScript (!) Libraries with TypeScript
+
+```sh
+npm i --save lodash
+```
+
+- [npm lodash](https://www.npmjs.com/package/@types/lodash)
+
+- [DefinitelyTyped - lodash](https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/lodash)
+  - \*.d.ts : "d"ecoration files
+- [@types - github](https://github.com/DefinitelyTyped)
+
+We should install @types/\*, when we work with 3rd-party library written in javascript
+
+```sh
+npm i --save-dev @types/lodash
+```
+
 </details>
