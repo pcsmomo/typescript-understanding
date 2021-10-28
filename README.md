@@ -636,7 +636,9 @@ npm install --save-dev clean-webpack-plugin
 ### 168. Module Introduction
 
 1. "Normal" Libraries & Using them with Typescript
+   - Additionally install `@types/lodash`
 2. TypeScript-specific Libraries
+   1. No Types Needed - simply install the library
 
 ### Fix up
 
@@ -660,6 +662,15 @@ We should install @types/\*, when we work with 3rd-party library written in java
 
 ```sh
 npm i --save-dev @types/lodash
+```
+
+### 171. No Types Needed: class-transformer
+
+[class-transformer](https://github.com/typestack/class-transformer)
+
+```sh
+npm install --save class-transformer
+npm install --save reflect-metadata
 ```
 
 </details>
