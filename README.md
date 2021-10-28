@@ -639,6 +639,7 @@ npm install --save-dev clean-webpack-plugin
    - Additionally install `@types/lodash`
 2. TypeScript-specific Libraries
    1. No Types Needed - simply install the library
+   2. Typescript-embracing - simply install and use the typescript features
 
 ### Fix up
 
@@ -671,6 +672,21 @@ npm i --save-dev @types/lodash
 ```sh
 npm install --save class-transformer
 npm install --save reflect-metadata
+```
+
+### 172. TypeScript-embracing: class-validator
+
+[class-validator](https://github.com/typestack/class-validator)
+
+```sh
+npm install class-validator --save
+```
+
+```json
+// tsconfig.json
+{
+  "experimentalDecorators": true /* Enables experimental support for ES7 decorators. */
+}
 ```
 
 </details>
