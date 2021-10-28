@@ -698,4 +698,10 @@ npm install --save-dev webpack webpack-cli webpack-dev-server typescript ts-load
 npm install --save-dev html-webpack-plugin
 ```
 
+### 178. Setting Up a Google API Key
+
+1. [Google Geocoding API](https://developers.google.com/maps/documentation/geocoding/start)
+2. Click "Get Started" Button on the top-right
+3. Get the API KEY
+
 </details>
