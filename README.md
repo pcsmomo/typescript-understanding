@@ -689,4 +689,13 @@ npm install class-validator --save
 }
 ```
 
+## Section 13: Time to Practice! Let's build a "Select & Share a Place" App (incl. Google Maps)
+
+### 183. Module Introduction
+
+```sh
+npm install --save-dev webpack webpack-cli webpack-dev-server typescript ts-loader
+npm install --save-dev html-webpack-plugin
+```
+
 </details>
