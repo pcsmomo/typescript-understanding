@@ -610,6 +610,12 @@ npm install --save-dev webpack webpack-cli webpack-dev-server typescript ts-load
 > It's not working on my local as it couldn't load index.html \
 > I guess with the recent version of webpack, I need to configure about index.html
 
+### Fixing up
+
+```sh
+npm install --save-dev html-webpack-plugin
+```
+
 ### 165. Adding a Production Workflow
 
 - module and rules are appiled per **file level**
