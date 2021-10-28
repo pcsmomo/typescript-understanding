@@ -610,7 +610,7 @@ npm install --save-dev webpack webpack-cli webpack-dev-server typescript ts-load
 > It's not working on my local as it couldn't load index.html \
 > I guess with the recent version of webpack, I need to configure about index.html
 
-### Fixing up
+### Fix up
 
 ```sh
 npm install --save-dev html-webpack-plugin
@@ -637,5 +637,11 @@ npm install --save-dev clean-webpack-plugin
 
 1. "Normal" Libraries & Using them with Typescript
 2. TypeScript-specific Libraries
+
+### Fix up
+
+```sh
+npm install --save-dev html-webpack-plugin
+```
 
 </details>
