@@ -10,6 +10,8 @@ type GoogleGeocodingResponse = {
   status: 'OK' | 'ZERO_RESULTS';
 };
 
+declare var google: any;
+
 function searchAddressHandler(event: Event) {
   event.preventDefault();
   const enteredAddress = addressInput.value;
@@ -26,6 +28,16 @@ function searchAddressHandler(event: Event) {
       }
       const coordinates = response.data.results[0].geometry.location;
       console.log(coordinates);
+
+      const map = new google.maps.Map(document.getElementById('map'), {
+        center: coordinates,
+        zoom: 12,
+      });
+
+      new google.maps.Marker({
+        position: coordinates,
+        map: map,
+      });
     })
     .catch((err) => {
       alert(err.message);

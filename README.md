@@ -710,4 +710,12 @@ npm install --save-dev html-webpack-plugin
 npm install --save axios
 ```
 
+### 180. Rendering a Map with Google Maps (incl. Types!)
+
+[Google Map JavaScript API](https://developers.google.com/maps/documentation/javascript/overview?authuser=1)
+
+```sh
+npm install --save-dev @types/google.maps
+```
+
 </details>
