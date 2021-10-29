@@ -728,4 +728,15 @@ npm install --save-dev @types/google.maps
 npx create-react-app . --template typescript
 ```
 
+### 189. Working with State & Types
+
+```js
+// This cannot guarantee the todos is the latest one.
+// setTodos([...todos, { id: Math.random().toString(), text: text }]);
+setTodos((prevTodos) => [
+  ...prevTodos,
+  { id: Math.random().toString(), text: text },
+]);
+```
+
 </details>

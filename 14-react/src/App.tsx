@@ -8,7 +8,12 @@ const App: React.FC = () => {
   const [todos, setTodos] = useState<Todo[]>([]);
 
   const todoAddHandler = (text: string) => {
-    setTodos([{ id: Math.random().toString(), text: text }]);
+    // This cannot guarantee the todos is the latest one.
+    // setTodos([...todos, { id: Math.random().toString(), text: text }]);
+    setTodos((prevTodos) => [
+      ...prevTodos,
+      { id: Math.random().toString(), text: text },
+    ]);
   };
 
   return (
