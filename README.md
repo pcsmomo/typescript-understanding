@@ -751,4 +751,11 @@ setTodos((prevTodos) => [
 > Is there any performence difference?\
 > A Comment from Jost, Teaching Assistant said that both are equivalent.
 
+### 193. Types for other React Features (e.g. Redux or Routing)
+
+- [Redux with TypeScript](https://redux.js.org/usage/usage-with-typescript)
+- React Router Dom with TypeScript
+  - It doesn't provide built-in typescript decorators
+  - `npm install --save-dev @types/react-router-dom`
+
 </details>
