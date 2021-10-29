@@ -10,7 +10,7 @@ type GoogleGeocodingResponse = {
   status: 'OK' | 'ZERO_RESULTS';
 };
 
-declare var google: any;
+// declare var google: any;
 
 function searchAddressHandler(event: Event) {
   event.preventDefault();
@@ -29,10 +29,13 @@ function searchAddressHandler(event: Event) {
       const coordinates = response.data.results[0].geometry.location;
       console.log(coordinates);
 
-      const map = new google.maps.Map(document.getElementById('map'), {
-        center: coordinates,
-        zoom: 12,
-      });
+      const map = new google.maps.Map(
+        document.getElementById('map')! as HTMLElement,
+        {
+          center: coordinates,
+          zoom: 12,
+        }
+      );
 
       new google.maps.Marker({
         position: coordinates,
