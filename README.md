@@ -739,4 +739,16 @@ setTodos((prevTodos) => [
 ]);
 ```
 
+### 191. More Props & State Work
+
+```js
+// in the leucture
+<button onClick={props.onDeleteTodo.bind(null, todo.id)}>DELETE</button>
+// my usual pattern
+<button onClick={() => props.onDeleteTodo(todo.id)}>DELETE</button>
+```
+
+> Is there any performence difference?\
+> A Comment from Jost, Teaching Assistant said that both are equivalent.
+
 </details>
