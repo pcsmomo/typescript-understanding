@@ -758,4 +758,10 @@ setTodos((prevTodos) => [
   - It doesn't provide built-in typescript decorators
   - `npm install --save-dev @types/react-router-dom`
 
+### 195. Useful Resources & Links
+
+- [Official React Docs](https://reactjs.org/docs/getting-started.html)
+- [More React Resources](https://academind.com/learn/react/)
+- [create-react-app + TypeScript Docs](https://create-react-app.dev/docs/adding-typescript/)
+
 </details>
