@@ -764,4 +764,13 @@ setTodos((prevTodos) => [
 - [More React Resources](https://academind.com/learn/react/)
 - [create-react-app + TypeScript Docs](https://create-react-app.dev/docs/adding-typescript/)
 
+## Section 15: Node.js + Express & TypeScript
+
+### 197. Executing TypeScript Code with Node.js
+
+We could use ts-node for development but it is ideal for production \
+[ts-node - Github](https://github.com/TypeStrong/ts-node)
+
+So we will go with only typescript compiler and vanila javascript.
+
 </details>
