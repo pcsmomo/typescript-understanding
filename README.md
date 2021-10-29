@@ -718,4 +718,14 @@ npm install --save axios
 npm install --save-dev @types/google.maps
 ```
 
+## Section 14: React.js & TypeScript
+
+### 184. Setting Up a React + TypeScript Project
+
+[Create React App with TypeScript](https://create-react-app.dev/docs/adding-typescript/)
+
+```sh
+npx create-react-app . --template typescript
+```
+
 </details>
