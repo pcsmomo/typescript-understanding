@@ -773,4 +773,11 @@ We could use ts-node for development but it is ideal for production \
 
 So we will go with only typescript compiler and vanila javascript.
 
+### 198. Setting up a Project
+
+```sh
+npm init
+tsc --init
+```
+
 </details>
