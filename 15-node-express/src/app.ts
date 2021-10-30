@@ -1,4 +1,5 @@
 import express, { Request, Response, NextFunction } from 'express';
+import morgan from 'morgan';
 
 import todoRoutes from './routes/todos';
 
@@ -6,6 +7,8 @@ const app = express();
 
 // body parser Middleware : parse body of all incoming requests to json type
 app.use(express.json());
+
+app.use(morgan('combined'));
 
 app.use('/todos', todoRoutes);
 
