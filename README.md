@@ -796,4 +796,25 @@ npm install --save express
 npm install --save-dev nodemon
 ```
 
+### 200. Adding Middleware & Types
+
+```js
+const express = require('express');
+// This statement will show a warning message
+// as lib: [] is not defined
+// So, we need to install @types/node
+```
+
+```sh
+npm install --save-dev @types/node
+npm install --save-dev @types/express
+# Then vscode can give us hints
+```
+
+```js
+// we can use this es6 syntax because it is a TypeScript file
+// When it compiles to JavaScript, the code will be changed
+import express from 'express';
+```
+
 </details>
