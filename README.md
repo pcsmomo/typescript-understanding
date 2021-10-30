@@ -817,4 +817,18 @@ npm install --save-dev @types/express
 import express from 'express';
 ```
 
+### 201. Working with Controllers & Parsing Request Bodies
+
+```js
+import { Request, Response, NextFunction } from 'express';
+export const createTodo: RequestHandler = (
+  req: Request,
+  res: Response,
+  next: NextFunction
+) => {};
+// This can be simplifed (equivalent)
+import { RequestHandler } from 'express';
+export const createTodo: RequestHandler = (req, res, next) => {};
+```
+
 </details>

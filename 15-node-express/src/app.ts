@@ -1,9 +1,11 @@
 import express, { Request, Response, NextFunction } from 'express';
-import { json } from 'stream/consumers';
 
 import todoRoutes from './routes/todos';
 
 const app = express();
+
+// body parser Middleware : parse body of all incoming requests to json type
+app.use(express.json());
 
 app.use('/todos', todoRoutes);
 
