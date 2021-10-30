@@ -780,4 +780,20 @@ npm init
 tsc --init
 ```
 
+```json
+// tsconfig.json
+{
+  "target": "ES2018" /* Set the JavaScript language version for emitted JavaScript and include compatible library declarations. */,
+  "module": "commonjs" /* Specify what module code is generated. */,
+  "rootDir": "./src" /* Specify the root folder within your source files. */,
+  "moduleResolution": "node" /* Specify how TypeScript looks up a file from a given module specifier. */,
+  "outDir": "./dist" /* Specify an output folder for all emitted files. */
+}
+```
+
+```sh
+npm install --save express
+npm install --save-dev nodemon
+```
+
 </details>
